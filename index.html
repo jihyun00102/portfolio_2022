@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_res.css">
+</head>
+<body>
+
+    <div id="portfolio">
+        <header-el></header-el>
+        <router-view></router-view>
+        <footer-el></footer-el>
+    </div>
+
+
+
+    
+
+    <!--  <header>
+        <div class="wrap">
+            <div class="logo">
+                <router-link to="/"><img src="./img/logo.png" alt=""></router-link>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li v-for="list in menuItem"><router-link to="'/'+list">{{list}}</router-link></li>
+                </ul>
+            </div>
+        </div>
+    </header> -->
+
+
+    <!-- <section id="main">
+        <div class="wrap">
+            <img src="./img/circle1.png" alt="" class="cir1">
+            <h3>portfolio</h3>
+            <img src="./img/stroke.png" alt="" class="str1">
+            <img src="./img/star1.png" alt="" class="star">
+            <p>JIHYUN</p>
+            <p>LEE</p>
+        </div>
+    </section> -->
+
+
+    <!-- about -->
+
+
+
+    <!--  <section id="skills">
+        <div class="frame">
+            <div class="box bx1" v-for="list in skillList">
+                <div class="cont">
+                    <div class="top">
+                        <svg>
+                            <circle cx="70" cy="70" r="70"/>
+                            <circle cx="70" cy="70" r="70"/>
+                        </svg>
+                        <div class="sk">
+                            <div class="count" :data-limit="list.count"><img :src="'./img/'+list.img+'.png'" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h2 class="cont_text">{{list.text}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explain" v-for="list in explainList">
+            <h3>{{list.title}}</h3>
+            <p>{{list.text}}</p>
+        </div>
+    </section> -->
+
+
+
+    <!-- portfolio -->
+    <!-- <div id="portfolio">
+        <div class="wrap">
+            <div class="left">
+                <div class="view">
+                    <div class="case">
+                        <img src="./img/macbook.png" alt="">
+                    </div>
+                    <div class="incase">
+                        <div class="portView"></div>
+                    </div>
+                </div>
+                <div class="exp">
+                    <h3>사이트명</h3>
+                    <p>affdkaslhflj</p>
+                    <div class="used">
+                        <ul>
+                            <li><h4>USED </h4></li>
+                            <li><img src="./img/html.png" alt=""></li>
+                            <li><img src="./img/html.png" alt=""></li>
+                            <li><img src="./img/html.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="btn">
+                        <button> VIEW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+
+                <ul class="sort_btn">
+                    <li class="active"><a data-sort="*" href="">ALL</a></li>
+                    <li><a data-sort=".design" href="">DESIGN</a></li>
+                    <li><a data-sort=".uiux" href="">UIUX</a></li>
+                    <li><a data-sort=".publish" href="">PUBLISH</a></li>
+                    <li><a data-sort=".develop" href="">DEVELOP</a></li>
+                </ul>
+
+                <div id="grid">
+                    <article>
+                        <div class="photo"></div>
+                        <div class="text">
+                            <img src="" alt="">
+                            <h3>Portfolio-1</h3>
+                            <p>이 곳은 Portfolio-1의 설명 공간입니다.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- contact -->
+
+    <!-- <div id="contact">
+        <div class="title">
+            <img src="./img/start_quote.svg" alt="">
+            <h2>Contact Me</h2>
+            <img src="./img/end_quote.svg
+            " alt="">
+        </div>
+        <form action="mail_contact" name="contactUs" method="post" action="">
+            <fieldset>
+                <div class="formlist">
+                    <ul>
+                        <li>
+                            <label for="name">이름 또는 회사명<sup>*</sup></label>
+                            <span class="inputbox">
+                                <input type="text" id="name" name="name" placeholder="이름 또는 회사명을 입력해주세요" required autocomplete="off">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="email">답변받을 이메일<sup>*</sup></label>
+                            <span class="inputbox">
+                                <input type="email" id="email" name="email" placeholder="sample@email.com" required autocomplete="off">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="message">문의내용<sup>*</sup></label>
+                            <span class="inputbox">
+                                <textarea name="message" id="message" placeholder="문의 사항을 입력해주세요" required autocomplete="off"></textarea>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="btn">
+                        <button type="submit" class="submit">문의하기</button>
+                    </div>
+                </div>
+
+                <div class="complete">
+                    <article>
+                        <h1>작성된 내용이 모두 전송되었습니다.</h1>
+                        <p>메일 확인 후 연락드리겠습니다.</p>
+                        <div class="ok_btn">
+                            <a href="" class="close">닫기</a>
+                        </div>
+                    </article>
+                </div>
+
+            </fieldset>
+        </form>
+        
+    </div> -->
+
+<!-- <img src="./img/photo.png" alt="">
+<img src="./img/oval.png" alt="">
+<img src="./img/oval2.png" alt=""> -->
+    <!-- <div id="about">
+        <div class="wrap">
+            <div class="left">
+                <div class="img"></div>
+                <div class="bubble1"></div>
+                <div class="bubble2"></div>
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h2>이지현</h2>
+                </div>
+                <div class="ex">
+                    <p>dfasdfa</p>
+                </div>
+                <div class="hash">
+                    <ul>
+                        <li>#열정적인</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+
+    
+    
+
+    
+
+    
+    
+
+    
+    <script src="./js/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/form-submission-handler.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
